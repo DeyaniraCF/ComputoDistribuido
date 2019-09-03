@@ -21,4 +21,21 @@ Facebook and google
 Massive scale
 Fast enough
 Very reliable
-Email servers (SMTP)
+Email servers (SMTP)"""
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
+"""Initial commit Deyanira
+Title: Why build a distributed system?
+
+Top 10 style:
+Scaling
+Reliability
+Dependency on cloud
+Performance
+Uptime requirements
+Aligning cost incentives
+Legal/privacy/politics
+You needed a server
+Its fun
+Your boss told you to
+
+
