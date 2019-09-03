@@ -38,7 +38,7 @@ You needed a server
 Its fun
 Your boss told you to
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-How to learn distributed system?
+Title: How to learn distributed system?
 Learn by doing!
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
