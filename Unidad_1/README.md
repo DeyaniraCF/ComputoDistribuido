@@ -23,7 +23,7 @@ Fast enough
 Very reliable
 Email servers (SMTP)"""
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-"""Initial commit Deyanira
+"""Initial commit Daniel
 Title: Why build a distributed system?
 
 Top 10 style:
@@ -38,7 +38,7 @@ You needed a server
 Its fun
 Your boss told you to
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-Title: How to learn distributed system?
+Title: How to learn distributed system? 'Deyanira A3'
 Learn by doing!
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
@@ -54,4 +54,7 @@ How to persist data--distributed storage
 How to secure your sistem
 How to operate your distributed system-the art of SRE
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-
+Title: What could go wrong? 'Deyanira A4'
+If you design a system that can discover the failure of any of its components, you must understand the type of failures that may occur in case of an error, such as DOS atack, broken dependency, data corruption, etc.
+As well as natural disasters that can ruin your equipment, or even the government is waiting for you through your equipment.
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
