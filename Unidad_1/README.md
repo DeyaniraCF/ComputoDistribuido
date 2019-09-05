@@ -1,5 +1,5 @@
 """Initial commit flavio
-Whats is a distributed system?
+Title: 1.Whats is a distributed system?
 Centralized system: state stored on a single computer
 Simpler.
 Easier to understand.
@@ -24,7 +24,7 @@ Very reliable
 Email servers (SMTP)"""
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
 """Initial commit Daniel
-Title: Why build a distributed system?
+Title: 2.Why build a distributed system?
 
 Top 10 style:
 Scaling
@@ -38,7 +38,7 @@ You needed a server
 Its fun
 Your boss told you to
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-Title: How to learn distributed system? 'Deyanira A3'
+Title: 3.-How to learn distributed system? 'Deyanira A3'
 Learn by doing!
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
@@ -54,7 +54,16 @@ How to persist data--distributed storage
 How to secure your sistem
 How to operate your distributed system-the art of SRE
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-Title: What could go wrong? 'Deyanira A4'
+Title: 4.-What could go wrong? 'Deyanira A4'
 If you design a system that can discover the failure of any of its components, you must understand the type of failures that may occur in case of an error, such as DOS atack, broken dependency, data corruption, etc.
 As well as natural disasters that can ruin your equipment, or even the government is waiting for you through your equipment.
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Title: 5.-The many tapes of fail 
+It shows how it is that you learn from the mistakes that were made in previous programs and that there are a lot of ways in which distributed systems can fail. And it makes no sense to try to design a system that is resistant to all possible failure modes, If you don't think about what you should consider to reinvent it, it shows you a list of faults such as network versus node.
+In network failures can occur such as:
+Lost of connectivity
+Packet loss
+Routing
+Problems of multiple routes.
+
+ How do you choose what kind of things you want to build to make your system more robust? We live in the real world, where something new is probably being built that does not yet exist, so you will find the assumption about what the frequency and impact distribution will be. What is not really handled well is safety. You will have to rely on encryption or some form of cryptography.
