@@ -99,5 +99,6 @@ This actually has been known to happen.
 They maybe do better than that if they're trying to emphasize their great customer service. So as long as you have a robust easy to avoid system you can pick a reliable service on top of this with all those constraints. You got to wonder is the SLA contract or is it marketing. When you read these isolates the first thing they emphasize is how incredibly reliable whatever service you're buying is provided.
 
 Ninety nine point ninety five sounds really hard to achieve and trust me it is. None of the providers ever wanted to have an outage. And when they do have an outage they want to make it as painless as possible for their customers. So they worked their butts off to make sure that it doesn't hurt them or it hurts them as little as possible.
+-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
  
