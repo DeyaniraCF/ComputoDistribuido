@@ -1,10 +1,10 @@
-<<<<<<< HEAD
+
 """Initial commit flavio"
 Title: 1.-Whats is a distributed system?
-=======
+
 """Initial commit flavio
 Title: 1.Whats is a distributed system?
->>>>>>> d5ad6873ffc25b66c45021ecdffdefd823c13baf
+d5ad6873ffc25b66c45021ecdffdefd823c13baf
 Centralized system: state stored on a single computer
 Simpler.
 Easier to understand.
@@ -28,13 +28,13 @@ Fast enough
 Very reliable
 Email servers (SMTP)"""
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.
-<<<<<<< HEAD
+
 "Initial commit Deyanira"
 Title: 2.-Why build a distributed system?
-=======
+
 """Initial commit Daniel
 Title: 2.Why build a distributed system?
->>>>>>> d5ad6873ffc25b66c45021ecdffdefd823c13baf
+
 
 Top 10 style:
 Scaling
@@ -48,12 +48,9 @@ You needed a server
 Its fun
 Your boss told you to
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-<<<<<<< HEAD
-"""Initial commit flavio"
-Title: 3.-How to learn distributed system?
-=======
+
 Title: 3.-How to learn distributed system? 'Deyanira A3'
->>>>>>> d5ad6873ffc25b66c45021ecdffdefd823c13baf
+ 
 Learn by doing!
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
@@ -69,10 +66,9 @@ How to persist data--distributed storage
 How to secure your sistem
 How to operate your distributed system-the art of SRE
 .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-<<<<<<< HEAD
 """Initial commit Deyanira"
-=======
-<<<<<<< HEAD
+
+
 Title: 4.-What could go wrong? 'Deyanira A4'
 If you design a system that can discover the failure of any of its components, you must understand the type of failures that may occur in case of an error, such as DOS atack, broken dependency, data corruption, etc.
 As well as natural disasters that can ruin your equipment, or even the government is waiting for you through your equipment.
@@ -88,7 +84,7 @@ Problems of multiple routes.
  How do you choose what kind of things you want to build to make your system more robust? We live in the real world, where something new is probably being built that does not yet exist, so you will find the assumption about what the frequency and impact distribution will be. What is not really handled well is safety. You will have to rely on encryption or some form of cryptography.
 
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
->>>>>>> d5ad6873ffc25b66c45021ecdffdefd823c13baf
+
 Title: 6.-Byzantine fault tolerance
 In this video we are going to talk about teenagers' strange fault tolerance or how they design and build a distributed system that can survive the worst possible failures in their system.That is a useful mental definition of business behavior, but it is not so useful for mathematical tests. So, when we define business behavior more formally, what we really like to say is that some node in your system that exhibits visits and failures is a traitorous node and that merchant sends contradictory messages, sends a response to one of his peers and Another different response to a different partner.That is also a design team failure and a business team failure. And we want to learn to design systems that can tolerate these failures. So why would you study design team? It seems that it is really difficult to design a computer that can survive even a malicious actor who takes over part of your computer. Well, you may have to do it for the application what you are building. Bitcoin is an example of that.Another example is if you need extreme reliability, flight control systems fly by cable on the Boeing 777 and 787. And because they are very concerned about reliability systems and that a hardware failure could exhibit behaviors similar to those of the Commercial team, they have built a business. Fault-tolerant flight control system of the equipment in these aircraft. But most people are not solving problems in that category. . The document we will talk about later on the problem of the Byzantine generals was written in 1982 and this is an ongoing investigation to this day. . Therefore, you want to create a distributed system that has been tolerance to thematic failures. What assumptions are you making about your system and how can your opponent attack it? Are you assuming that your adversary can see all the messages between his nodes because, for example, he could be using Wi-Fi and all his notes are very close or he is assuming he has a switched Ethernet network? And so, all your messages are private, assuming that the network itself is not attacked.
 >>>>>>> 5c3037b79324549547cbaf9f704b8684643bf187
@@ -143,18 +139,19 @@ When you take a Distributed Systems course you'll always have at least one lectu
 Title: 11.-Introduction to blockchain consensus
 The block chain just like the title lets talk. It's received way too much hype. Proponents of the block chain are convinced that it solves the Byzantine Generals Problem. This implies that consensus and distributor systems. It's solved. You no longer have to understand complicated things like the pax OS algorithm or even how the Byzantine Generals Problem itself works right. Well not really true. Some problems are well suited to block chain based solutions and other problems are a terrible match. And you don't want that block chain to get within miles of them. So to understand which kind of problem you have you need to really understand how block chain consensus works. That's what this series of videos will explain in the first video I explain the bitcoin block chain data structure. So you would understand how to do a block chain on a single computer in the second video. Explain how you replicate that block chain from one computer to another forming a consensus. And then the third video will look at that Bitcoin block chain consensus algorithm we just developed and compare it to other consensus algorithms such as Pax O's raft and PBF T or practical Byzantine fault tolerance. Now if this is your first time looking at the block chain it's really helpful to understand where they're used which is typically crypto currencies. So I'd recommend going in watching an introduction to those first. Grant Sanderson has an excellent introduction on his channel three blue on Brown. I have a link to it down below. Go watch that and then come back and you can learn about block chain consensus.
 -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-12.-What is a blockchain?
+Title: 12.-What is a blockchain?
 What is a blockchain a blockchain is actually a rather simple data structure. Let's assume that you have a bunch of data and you want to form a block chain out of it. How do we do that. Well we'll just carve a chunk of that data off and we'll call it. I don't know a block and we'll put an empty header on it. And now we've got a one block block chain when more data comes along we can form a second block. And in the header of it we'll put the hash of the entire first block this hash will you have to be a cryptographic hash which means it has two important properties. One is it's really cheap and easy for us to re compute it which means that we can at any time validate that the first block is OK by Rican puting it's hash and comparing it to the hash we've stored in the second block. The second property has is its next to impossible for an attacker to go and corrupt our first block in a way which will pass our hash validation. So any corruption will be detected and we won't be fooled. And then when we want to add a third block for a blockchain we just use the hash of the second block and for a fourth block we use the hash of the third block and so on. So it's just a chain of blocks chained together by the hashes of the prior blocks. So why are we using hashes instead of pointers to changes together. Well it means that the blockchain is actually kind of has this really useful property which is we only need to find one trusted friend to give us the very last block in the blockchain. And as long as we get a good copy of that. Any other blocks we get from any other computers in the network whether they are our best buddies computers or whether their computers owned by hackers we don't trust. It doesn't matter. We can validate by validating all these hashes that our block chain is intact that it hasn't been corrupted by anyone. And we've got a perfect copy of the blockchain all starting from just having one block which we got from a trusted partner. So that's really it. That is the blockchain data structure and tha
 
-13.-Bitcoin blockchain consensus
+.-.-.-.-.-.-.-.-.-.-.-..-..-.--.-.-.--.-.--.-.-.-.--.-.-..-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-..-.-.--.-
+Title: 13.-Bitcoin blockchain consensus
 How do you get about you Computers took on this book well in previous previews we studied Consensus over them such as packs Jobs Ratchet and PDF Watch. Let us get Consensus Belocopitt us what do we just want to thoughts now and as we actually didn't Study PBA without practical visiting fault and we still need to visit full Towers Watson PDF just as criptográfica to make the solutions. Little more efficient the problem with using a trivial Consensus help and for something like Coyne is that Bitcoin allows putter to join everything that work and he is actually what they want the script. You have one to many other so that means that if there are reevaluation of the ofertones approach to keep them with you may never Keep conceptos because you dont have a majority of Books available to complete the outer heaven works.
 What's the Self we're going to invest and new hope for them together coming step by step. We're going to start up something very simple and then text the box as we discover the box and eventually we're going to read Develop Coin over time together. Well one we get Ori and new blog that new blog eventually needs to be Ripple get it to all the good know how to nurses and other words we need to be able to have a consensus. When and even know where Block is generated that needs to point to this new black or blockchain Browns.
 Now this is not Usual because traditional cantoneses ofertones dont really Hollerith partition is that they sort of their journey the works and the other portion doesnt Word they to stop the partition is to back with the Bitcoin Blockchain. The Wall Street as long as you have one not that is Janney reading books and trouppe Getting Up to all the other Noites in your network Wired fails. Is it to get rid of look at the same time and then what happens is for example. Here I have Computer one computer three in the same time and that they started telling their neighbors about it and the neighbors way we are just for the two UCS that Paix to the same and so know how to have a chain.
 A Black Hat Trick or in other words weve Fourquet our blockchain and we have to branches to our futhark which we need to use the group. What It was going to do about this. Well thats what to do in the simple thing possible about lots come up with the really simple solution. If you ever know what is the fall in your blockchain and you want to add a new black.
 What you should do is. You should have your back to whatever the longest Preachers simple Rock and if you're the one of the same WinMX just pick up and it doesnt matter something do it so we do that it was going to happen here putter One and the New Black. So how we do this and reprehensible the way we need is every time you want to help you speak a random period of time and your time Mark Spiders. Do you have to work in this using an example:So if you have been comunícate in between now and we want.
-
-14.-Should you use bitcoin consensus?
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+Title: 14.-Should you use bitcoin consensus?
 Many of us make comment to the office Ancic Christ and get the cool problem. What if you have a false where thousands of computers you might be called the function of the same time on to different Computers so we need a way of those ideas to come from different putter so we need to make it to some all the identity of the computer and the identity Computer. Ok so now we got a solution that works and the question is it is the best solution for Generation Apple you need Guidi aspects of How is it for computer to generate the time of the day with it and if start looking at the latest that it's not actually the fastest function called the world. So maybe we want to do something Tissot what we do that the World Vision what we are just incriminen a Colter So about every time you call the única function.
 It takes them infinity and then just reads Memory location in comments says This is your new uadi work well ya that will generic mycoides and as well known as your Don't never walk Peoples close to the Wii Sports System. What happens quiero reboots if your computer reboots the counter resets this year again and then you might Keep reputation as well. So we need something better and so we can do instead Issey every thousand or Count thousand or Milli and Implications of this function we right to disco What are you need. We just Grounded in the penalty owned Computer and would on it actually Design if all you need is Unitas but then many of us make the real chill out what you said is ya that give you something new Nek.
 We sincronice at any time in the sky with all its and the book is in Coordination these are you might not generic Montalbetti increasing ideas so time would of course to get the hacker internas. We really want to trying to solve the problem Cookson transaction. I don't want to use it so that the solutions doesnt Singer as. Well if you're not going to see the clocks and wanting to get over.We need to save to more than one disc one more than one computer where maybe Save the foul system but now we know how we going to have Mark Fell in Love with Love and more than one Serfor at some time we love.
-
+.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
