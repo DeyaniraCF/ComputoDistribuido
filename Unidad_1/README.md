@@ -1,4 +1,4 @@
-# **1.-Whats is a distributed system?** 'Flavio A1'
+# **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
 - Easier to understand.
@@ -35,7 +35,7 @@ Top 10 style:
 - Its fun
 - Your boss told you to
 
-# **3.-How to learn distributed system?** 'Deyanira A3'
+# **3.-How to learn distributed system?**
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
 - How systems fal.
@@ -50,7 +50,7 @@ Topics in distributed system cont.
 - How to secure your sistem
 - How to operate your distributed system-the art of SRE
 
-# **4.-What could go wrong?**  'Deyanira A4'
+# **4.-What could go wrong?**
 If you design a system that can discover the failure of any of its components, you must understand the type of failures that may occur in case of an error, such as DOS atack, broken dependency, data corruption, etc.
 As well as natural disasters that can ruin your equipment, or even the government is waiting for you through your equipment.
 
