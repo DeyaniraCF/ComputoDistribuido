@@ -1,4 +1,4 @@
-# **Title: 1.Whats is a distributed system?** 'Flavio A1'
+# **Title: 1.-Whats is a distributed system?** 'Flavio A1'
 Centralized system: state stored on a single computer
 - Simpler.
 - Easier to understand.
@@ -22,7 +22,7 @@ Well worth using when their power is needed
 - Very reliable
 - Email servers (SMTP)
 
-# **Title: 2.Why build a distributed system?**
+# **Title: 2.-Why build a distributed system?**
 Top 10 style:
 - Scaling
 - Reliability
@@ -99,9 +99,9 @@ Many of us make comment to the office Ancic Christ and get the cool problem. Wha
 It takes them infinity and then just reads Memory location in comments says This is your new uadi work well ya that will generic mycoides and as well known as your Don't never walk Peoples close to the Wii Sports System. What happens quiero reboots if your computer reboots the counter resets this year again and then you might Keep reputation as well. So we need something better and so we can do instead Issey every thousand or Count thousand or Milli and Implications of this function we right to disco What are you need. We just Grounded in the penalty owned Computer and would on it actually Design if all you need is Unitas but then many of us make the real chill out what you said is ya that give you something new Nek.
 We sincronice at any time in the sky with all its and the book is in Coordination these are you might not generic Montalbetti increasing ideas so time would of course to get the hacker internas. We really want to trying to solve the problem Cookson transaction. I don't want to use it so that the solutions doesnt Singer as. Well if you're not going to see the clocks and wanting to get over.We need to save to more than one disc one more than one computer where maybe Save the foul system but now we know how we going to have Mark Fell in Love with Love and more than one Serfor at some time we love.
 
-# **Title: 15 Distribuited**
+# **Title: 15.-Distribuited**
 Many of us make comment to the office Ancic Christ and get the cool problem. You see what did databases dont have to run Across Computers and Cheung mastitis and Brittney Protocol that were allowed to do Transactions across those Computers but that practical asume every time you want to transaction you could to some transaction única Lovely UNIACC Haiti and his problem is used as Macross What's the best way to the function and see that every time you could give you would be different Numb different Lovely UNIACC identifiqué Susan actually problem. How do you write the best goebbeliana Dunphy function past to think about it and that when you come back will talk about the full process that when you designing this function. So. The first thing is a global Unitec. Well it's a number which is tweak it seems pretty obvious but I mean is every time all this function will never ever Joyner at the same but not on the same Computer and not only different better not for the entire spinning your system so that you can use it to you Nicoli identified you are Transactions and so since it has been next time you first Integration might be used time for us so may be able to call it time of day and then every Bakker saqueen all of generated and new global única it and a far from Get time of day and get the kids on their right. Well actually work if you will we have a single Computer. What if you have a falseen where thousands of computers you might be called the function of the same time on to different Computers so we need a way of those ideas to come from different putter so we need to make it to some all the identity of the computer and the identity Computer.
 
-# **Title: 16 The CAP theorem**
+# **Title: 16.-The CAP theorem**
 It's because you're trying to build something that is more than a Santalices Trust Weeds Computer signed used to Stoned The Theory of the possible. If your system Evers offers perceptions we can explain what is all means by using an example. What's your starting your own vec with all great start ups you decided to start Small with only one cost Markham and to attempts your item support three different operations. You can the post opponent with Euromoney and you also have an Hembery you never want to Bells to get it was here because you love distributed systems and you don't want to build more Computers you Storani campeones and the items themselves ehhhh as a couple of the Campalans.
 When youre Customer walks up to an team and in search of everything is working system is very simple. Through the script system has suffered a partition in this case. So what does the team doing next one this partition happens. This is the design saying that the chapter and talks about the system Mimic choice to be consistent tildo Books and So Long explained.
