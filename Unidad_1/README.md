@@ -1,7 +1,7 @@
 Unidad_1
 Integrants:
-Castro Arenas Flavio Daniel
-Coronado Felipe Deyanira
+Castro Arenas Flavio Daniel.
+Coronado Felipe Deyanira.
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
