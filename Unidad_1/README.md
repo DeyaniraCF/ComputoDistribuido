@@ -1,3 +1,4 @@
+Unidad_1
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
@@ -105,3 +106,5 @@ Many of us make comment to the office Ancic Christ and get the cool problem. You
 # **16.-The CAP theorem**
 It's because you're trying to build something that is more than a Santalices Trust Weeds Computer signed used to Stoned The Theory of the possible. If your system Evers offers perceptions we can explain what is all means by using an example. What's your starting your own vec with all great start ups you decided to start Small with only one cost Markham and to attempts your item support three different operations. You can the post opponent with Euromoney and you also have an Hembery you never want to Bells to get it was here because you love distributed systems and you don't want to build more Computers you Storani campeones and the items themselves ehhhh as a couple of the Campalans.
 When youre Customer walks up to an team and in search of everything is working system is very simple. Through the script system has suffered a partition in this case. So what does the team doing next one this partition happens. This is the design saying that the chapter and talks about the system Mimic choice to be consistent tildo Books and So Long explained.
+=======
+
