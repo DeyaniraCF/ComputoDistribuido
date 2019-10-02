@@ -2,7 +2,7 @@ Unidad 1 Introduction t Distributed Systems
 
 **Table of contens**
 [Prueba](#prueba1)
--[1.-Whats is a distributed system?](#1) |
+-[Lesson1](#Lesson1) |
 -[2.-Why build a distributed system?](#what-build-a-distributed-system) |
 -[3.-How to learn distributed system?](#how-to-learn-distributed-system) |
 -[4.-What could go wrong?](#what-could-go-wrong) |
@@ -20,7 +20,7 @@ Unidad 1 Introduction t Distributed Systems
 [16.-The CAP Theorem](#the-cap-theorem) |
 [Authors](integrants)
 
-### prueba1
+### Lesson1
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
