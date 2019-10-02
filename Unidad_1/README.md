@@ -1,7 +1,7 @@
 Unidad_1
-[Video 1](1.-Whats is a distributed system?)
+[Video1](#Video1)
 
-
+### Video1
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
