@@ -18,9 +18,9 @@ Unidad 1 Introduction t Distributed Systems
 [14.-Should you use bitcoin consensus?](#should-you-use-bitcoin-concensus)
 [15.-Distribuited System Design Example(Unique ID)](#distributed-system-design-example-(unique-id)) 
 [16.-The CAP Theorem](#the-cap-theorem) 
-[Authors](integrants)
+[Authors](#integrants)
 
-### Lesson1
+
 ## Whats is a distributed system ##
 Centralized system: state stored on a single computer
 - Simpler.
