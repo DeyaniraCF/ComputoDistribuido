@@ -20,7 +20,7 @@ Unidad 1 Introduction t Distributed Systems
 [16.-The CAP Theorem](#the-cap-theorem) |
 [Authors](integrants)
 
-###prueba1
+### prueba1
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
