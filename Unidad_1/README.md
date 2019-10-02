@@ -2,7 +2,8 @@ Unidad 1 Introduction t Distributed Systems
 
 **Table of contens**
 [Prueba](#prueba1)
--[Lesson1](#Lesson1) |
+-[Lesson1](#Lesson1) 
+ -[1.-Whats is a distributed system?]|(Whats-is-a-distributed-system)
 -[2.-Why build a distributed system?](#what-build-a-distributed-system) |
 -[3.-How to learn distributed system?](#how-to-learn-distributed-system) |
 -[4.-What could go wrong?](#what-could-go-wrong) |
@@ -21,7 +22,7 @@ Unidad 1 Introduction t Distributed Systems
 [Authors](integrants)
 
 ### Lesson1
-# **1.-Whats is a distributed system?**
+## 1.-Whats is a distributed system ##
 Centralized system: state stored on a single computer
 - Simpler.
 - Easier to understand.
@@ -131,6 +132,6 @@ When youre Customer walks up to an team and in search of everything is working s
 
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=16
 
-**Integrants:**
+**Integrants**
 **_Castro Arenas Flavio Daniel_**
 **_Coronado Felipe Deyanira_**
