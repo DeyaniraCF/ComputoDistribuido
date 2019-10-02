@@ -21,7 +21,7 @@ Unidad 1 Introduction t Distributed Systems
 [Authors](integrants)
 
 ### Lesson1
-## 1.-Whats is a distributed system ##
+## Whats is a distributed system ##
 Centralized system: state stored on a single computer
 - Simpler.
 - Easier to understand.
