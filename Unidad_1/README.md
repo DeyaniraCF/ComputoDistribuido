@@ -1,6 +1,6 @@
-Unidad 1 Introduction t Distributed Systems
+Unidad 1 Introduction to Distributed Systems
 
-**Table of contens**
+**Table of contents**
 
 [1.-Whats is a distributed system?](#whats-is-a-distributed-system) 
 
