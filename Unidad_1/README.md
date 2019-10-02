@@ -3,7 +3,7 @@ Unidad 1 Introduction t Distributed Systems
 **Table of contens**
 
 -[1.-Whats is a distributed system?](#whats-is-a-distributed-system) 
--[2.-Why build a distributed system?](#what-build-a-distributed-system) 
+-[2.-Why build a distributed system?](#why-build-a-distributed-system) 
 -[3.-How to learn distributed system?](#how-to-learn-distributed-system)
 -[4.-What could go wrong?](#what-could-go-wrong)
 -[5.-The many tapes of fail](#the-many-tapes-of-fail)
@@ -11,14 +11,14 @@ Unidad 1 Introduction t Distributed Systems
 [7.-SLIs SLOs and SLAs](#slis-slos-and-slas)
 [8.-Class Project](#class-project)
 [9.-Paxos Simplified](#paxos-simplified)
-[10.-How counterstrike works(time in distributed systems)](#how-counterstrike-works-(time-in-distributed-systems)) 
-[11.-Introduction to blockchain consensus](#introduction-to-blockchain-concensus)
+[10.-How counterstrike works(time in distributed systems)](#How-counterstrike-works-time-in-distributed-systems) 
+[11.-Introduction to blockchain consensus](#Introduction-to-blockchain-consensus)
 [12.-What is a blockchain?](#what-is-a-blockchain)
-[13.-Bitcoin blockchain consensus](#bitcoin-blockchain-concensus)
-[14.-Should you use bitcoin consensus?](#should-you-use-bitcoin-concensus)
-[15.-Distribuited System Design Example(Unique ID)](#distributed-system-design-example-(unique-id)) 
+[13.-Bitcoin blockchain consensus](#bitcoin-blockchain-consensus)
+[14.-Should you use bitcoin consensus?](#should-you-use-bitcoin-consensus)
+[15.-Distribuited System Design Example(Unique ID)](#distribuited-system-design-example-unique-id) 
 [16.-The CAP Theorem](#the-cap-theorem) 
-[Authors](#integrants)
+[Authors](#Authors)
 
 
 ## Whats is a distributed system ##
@@ -122,7 +122,7 @@ Many of us make comment to the office Ancic Christ and get the cool problem. Wha
 It takes them infinity and then just reads Memory location in comments says This is your new uadi work well ya that will generic mycoides and as well known as your Don't never walk Peoples close to the Wii Sports System. What happens quiero reboots if your computer reboots the counter resets this year again and then you might Keep reputation as well. So we need something better and so we can do instead Issey every thousand or Count thousand or Milli and Implications of this function we right to disco What are you need. We just Grounded in the penalty owned Computer and would on it actually Design if all you need is Unitas but then many of us make the real chill out what you said is ya that give you something new Nek.
 We sincronice at any time in the sky with all its and the book is in Coordination these are you might not generic Montalbetti increasing ideas so time would of course to get the hacker internas. We really want to trying to solve the problem Cookson transaction. I don't want to use it so that the solutions doesnt Singer as. Well if you're not going to see the clocks and wanting to get over.We need to save to more than one disc one more than one computer where maybe Save the foul system but now we know how we going to have Mark Fell in Love with Love and more than one Serfor at some time we love.
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=14
-# **Distribuited System Design Example(Unique ID)**
+# **Distribuited System Design Example Unique ID**
 Many of us make comment to the office Ancic Christ and get the cool problem. You see what did databases dont have to run Across Computers and Cheung mastitis and Brittney Protocol that were allowed to do Transactions across those Computers but that practical asume every time you want to transaction you could to some transaction única Lovely UNIACC Haiti and his problem is used as Macross What's the best way to the function and see that every time you could give you would be different Numb different Lovely UNIACC identifiqué Susan actually problem. How do you write the best goebbeliana Dunphy function past to think about it and that when you come back will talk about the full process that when you designing this function. So. The first thing is a global Unitec. Well it's a number which is tweak it seems pretty obvious but I mean is every time all this function will never ever Joyner at the same but not on the same Computer and not only different better not for the entire spinning your system so that you can use it to you Nicoli identified you are Transactions and so since it has been next time you first Integration might be used time for us so may be able to call it time of day and then every Bakker saqueen all of generated and new global única it and a far from Get time of day and get the kids on their right. Well actually work if you will we have a single Computer. What if you have a falseen where thousands of computers you might be called the function of the same time on to different Computers so we need a way of those ideas to come from different putter so we need to make it to some all the identity of the computer and the identity Computer.
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=15
 # **The CAP theorem**
@@ -131,6 +131,6 @@ When youre Customer walks up to an team and in search of everything is working s
 
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=16
 
-**Integrants**
+### Authors
 **_Castro Arenas Flavio Daniel_**
 **_Coronado Felipe Deyanira_**
