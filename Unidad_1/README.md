@@ -3,9 +3,13 @@ Unidad 1 Introduction t Distributed Systems
 **Table of contens**
 
 [1.-Whats is a distributed system?](#whats-is-a-distributed-system) 
+
 [2.-Why build a distributed system?](#why-build-a-distributed-system) 
+
 [3.-How to learn distributed system?](#how-to-learn-distributed-system)
+
 [4.-What could go wrong?](#what-could-go-wrong)
+
 [5.-The many tapes of fail](#the-many-tapes-of-fail)
 [6.-Byzantine fault tolerance](#byzantine-fault-tolerance)
 [7.-SLIs SLOs and SLAs](#slis-slos-and-slas)
