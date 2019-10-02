@@ -11,17 +11,29 @@ Unidad 1 Introduction t Distributed Systems
 [4.-What could go wrong?](#what-could-go-wrong)
 
 [5.-The many tapes of fail](#the-many-tapes-of-fail)
+
 [6.-Byzantine fault tolerance](#byzantine-fault-tolerance)
+
 [7.-SLIs SLOs and SLAs](#slis-slos-and-slas)
+
 [8.-Class Project](#class-project)
+
 [9.-Paxos Simplified](#paxos-simplified)
+
 [10.-How counterstrike works(time in distributed systems)](#How-counterstrike-works-time-in-distributed-systems) 
+
 [11.-Introduction to blockchain consensus](#Introduction-to-blockchain-consensus)
+
 [12.-What is a blockchain?](#what-is-a-blockchain)
+
 [13.-Bitcoin blockchain consensus](#bitcoin-blockchain-consensus)
+
 [14.-Should you use bitcoin consensus?](#should-you-use-bitcoin-consensus)
+
 [15.-Distribuited System Design Example(Unique ID)](#distribuited-system-design-example-unique-id) 
-[16.-The CAP Theorem](#the-cap-theorem) 
+
+[16.-The CAP Theorem](#the-cap-theorem)
+
 [Authors](#Authors)
 
 
