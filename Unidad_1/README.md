@@ -1,7 +1,22 @@
 Unidad_1
-[Video1](#Video1)
+[1.-Whats is a distributed system?](#what-is-a-distributed-system)
+[2.-Why build a distributed system?](#what-build-a-distributed-system)
+[3.-How to learn distributed system?](#how-to-learn-distributed-system)
+[4.-What could go wrong?](#what-could-go-wrong)
+[5.-The many tapes of fail](#the-many-tapes-of-fail)
+[6.-Byzantine fault tolerance](#byzantine-fault-tolerance)
+[7.-SLIs SLOs and SLAs](#slis-slos-and-slas)
+[8.-Class Project](#class-project)
+[9.-Paxos Simplified](#paxos-simplified)
+[10.-How counterstrike works(time in distributed systems)](#how-counterstrike-works-(time-in-distributed-systems))
+[11.-Introduction to blockchain consensus](#introduction-to-blockchain-concensus)
+[12.-What is a blockchain?](#what-is-a-blockchain)
+[13.-Bitcoin blockchain consensus](#bitcoin-blockchain-concensus)
+[14.-Should you use bitcoin consensus?](#should-you-use-bitcoin-concensus)
+[15.-Distribuited System Design Example(Unique ID)](#distributed-system-design-example-(unique-id))
+[3.-How to learn distributed system?](#how-to-learn-distributed-system)
 
-### Video1
+
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
@@ -113,5 +128,5 @@ When youre Customer walks up to an team and in search of everything is working s
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=16
 
 **Integrants:**
-Castro Arenas Flavio Daniel.
-Coronado Felipe Deyanira.
+**_Castro Arenas Flavio Daniel_**
+**_Coronado Felipe Deyanira_**
