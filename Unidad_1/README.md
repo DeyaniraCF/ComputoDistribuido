@@ -1,7 +1,7 @@
 Unidad_1
-Integrants:
-Castro Arenas Flavio Daniel.
-Coronado Felipe Deyanira.
+[Video 1](1.-Whats is a distributed system?)
+
+
 # **1.-Whats is a distributed system?**
 Centralized system: state stored on a single computer
 - Simpler.
@@ -111,3 +111,7 @@ It's because you're trying to build something that is more than a Santalices Tru
 When youre Customer walks up to an team and in search of everything is working system is very simple. Through the script system has suffered a partition in this case. So what does the team doing next one this partition happens. This is the design saying that the chapter and talks about the system Mimic choice to be consistent tildo Books and So Long explained.
 
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=16
+
+**Integrants:**
+Castro Arenas Flavio Daniel.
+Coronado Felipe Deyanira.
