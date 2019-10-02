@@ -46,7 +46,7 @@ Well worth using when their power is needed
 - Very reliable
 - Email servers (SMTP)
 https://www.youtube.com/watch?v=7VbL89mKK3M&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A
-### **2.-Why build a distributed system
+### 2.-Why build a distributed system
 Top 10 style:
 - Scaling
 - Reliability
