@@ -38,42 +38,15 @@ Unidad 1 Introduction to Distributed Systems
 
 
 ## Whats is a distributed system ##
-Centralized system: state stored on a single computer
-- Simpler.
-- Easier to understand.
-- Can be faster for a single user.
-Distributed system: State divided over multiple computers
-- More robust (can tolerate failures)
-- More Scalable (often supports many users)
-- more complex
-¿Complexity is bad?
-- Complex systems can be less reliable!
-- Getting a distributed system right is hard
-- Getting them wrong can be bad
-- Because they are often important
-Well worth using when their power is needed
- Examples
-- DNS
-- Distributed lookup table of hostname to ip address
-- Facebook and google
-- Massive scale
-- Fast enough
-- Very reliable
-- Email servers (SMTP)
 
+The centralized systems are low cost, easy to understand and fast for a simple user.
+
+The disadvantages are that if the connection to the system is lost, you will no longer be able to access the information inside.
+
+Distributed systems are fault tolerant, if the connection with one is lost, you have access to the information. They are scales, that is, it can support more than one user.
 https://www.youtube.com/watch?v=7VbL89mKK3M&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A
 ### Why build a distributed system
-Top 10 style:
-- Scaling
-- Reliability
-- Dependency on cloud
-- Performance
-- Uptime requirements
-- Aligning cost incentives
-- Legal/privacy/politics
-- You needed a server
-- Its fun
-- Your boss told you
+In the video he explains that a more complex system does not make it a disadvantage, since that helps to make it more secure and reliable. Mention that Facebook and Google use distributed systems since you have to be mass scalable,they have to be fast and very safe. If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other servers
 
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=2
 # **How to learn distributed system?**
