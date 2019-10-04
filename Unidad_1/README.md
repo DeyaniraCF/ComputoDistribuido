@@ -38,12 +38,9 @@ Unidad 1 Introduction to Distributed Systems
 
 
 ## Whats is a distributed system ##
-
-The centralized systems are low cost, easy to understand and fast for a simple user.
-
-The disadvantages are that if the connection to the system is lost, you will no longer be able to access the information inside.
-
+The centralized systems are low cost, easy to understand and fast for a simple user, the disadvantages are that if the connection to the system is lost, you will no longer be able to access the information inside.
 Distributed systems are fault tolerant, if the connection with one is lost, you have access to the information. They are scales, that is, it can support more than one user.
+
 https://www.youtube.com/watch?v=7VbL89mKK3M&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A
 ### Why build a distributed system
 In the video he explains that a more complex system does not make it a disadvantage, since that helps to make it more secure and reliable. Mention that Facebook and Google use distributed systems since you have to be mass scalable,they have to be fast and very safe. If we send an email and it reaches a server that is failing, it will not be sent. But this will not happen to everyone who sends an email, but the other emails that are sent are sent to other servers
