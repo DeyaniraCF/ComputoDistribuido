@@ -49,17 +49,7 @@ https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5
 # **How to learn distributed system?**
 This is a system discipline. An experimental science, no just theory, learn most by taking apart, debugging, modifying an existing system. Topics in these videos just help you with understanding.
 Topics in distributed system
-- How systems fal.
-- How to express your goals: SLIs, SLOs, and SLAs
-- How to combine unreliable components to make a more reliable system
-- How nodes communicate --RPCs
-- How nodes find each other-- naming
-Topics in distributed system cont.
-- How to use time in distributed world
-- How get agreement--consensus
-- How to persist data--distributed storage
-- How to secure your sistem
-- How to operate your distributed system-the art of SRE
+
 
 https://www.youtube.com/watch?v=pMQzLVK39Kk&list=PLOE1GTZ5ouRPbpTnrZ3Wqjamfwn_Q5Y9A&index=3
 # **What could go wrong?**
