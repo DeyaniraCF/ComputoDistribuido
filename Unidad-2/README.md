@@ -24,9 +24,9 @@ The fourth way is an asynchronous programming, where the OS is not participating
 The answer is asyncio is the new concurrency module introduced in Python 3.4. It is designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code as there are no callbacks.
 
 Asyncio uses different constructs: event loops, coroutinesand futures.
--An event loop manages and distributes the execution of different tasks. It registers them and handles distributing the flow of control between them.
--Coroutines (covered above) are special functions that work similarly to Python generators, on await they release the flow of control back to the event loop. A coroutine needs to be scheduled to run on the event loop, once scheduled coroutines are wrapped in Tasks which is a type of Future.
--Futures represent the result of a task that may or may not have been executed. This result may be an exception.
+- An event loop manages and distributes the execution of different tasks. It registers them and handles distributing the flow of control between them.
+- Coroutines (covered above) are special functions that work similarly to Python generators, on await they release the flow of control back to the event loop. A coroutine needs to be scheduled to run on the event loop, once scheduled coroutines are wrapped in Tasks which is a type of Future.
+- Futures represent the result of a task that may or may not have been executed. This result may be an exception.
 
 Using Asyncio, you can structure your code so subtasks are defined as coroutines and allows you to schedule them as you please, including simultaneously. Coroutines contain yield points where we define possible points where a context switch can happen if other tasks are pending, but will not if no other task is pending.
 
