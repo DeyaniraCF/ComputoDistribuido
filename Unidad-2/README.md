@@ -7,15 +7,19 @@ With asynchronous programming, you allow your code to handle other tasks while w
 
 
 **1. Multiple Processes**
+
 The most obvious way is to use multiple processes. From the terminal, you can start your script two, three, four…ten times and then all the scripts are going to run independently or at the same time. The operating system that’s underneath will take care of sharing your CPU resources among all those instances. Alternately you can use the multiprocessing library which supports spawning processes.
 
 **2. Multiple Threads**
+
 The next way to run multiple things at once is to use threads. A thread is a line of execution, pretty much like a process, but you can have multiple threads in the context of one process and they all share access to common resources. 
 
 **3. Coroutines using yield**
+
 Coroutines are generalization of subroutines. They are used for cooperative multitasking where a process voluntarily yield (give away) control periodically or when idle in order to enable multiple applications to be run simultaneously. Coroutines are similar to generators but with few extra methods and slight change in how we use yield statement. Generators produce data for iteration while coroutines can also consume data.
 
 **4. Asynchronous Programming**
+
 The fourth way is an asynchronous programming, where the OS is not participating. As far as OS is concerned you’re going to have one process and there’s going to be a single thread within that process, but you’ll be able to do multiple things at once.
 The answer is asyncio is the new concurrency module introduced in Python 3.4. It is designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code as there are no callbacks.
 
@@ -29,4 +33,5 @@ Using Asyncio, you can structure your code so subtasks are defined as coroutines
 A context switch in asyncio represents the event loop yielding the flow of control from one coroutine to the next.
 
 **Using Redis and Redis Queue RQ**
+
 Using asyncio and aiohttp may not always be in an option,  Also, there will be scenarios when you would want to distribute your tasks across different servers. In that case we can leverage RQ (Redis Queue). It is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis — a key/value data store.
