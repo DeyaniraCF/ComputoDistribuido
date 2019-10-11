@@ -35,3 +35,5 @@ A context switch in asyncio represents the event loop yielding the flow of contr
 **Using Redis and Redis Queue RQ**
 
 Using asyncio and aiohttp may not always be in an option,  Also, there will be scenarios when you would want to distribute your tasks across different servers. In that case we can leverage RQ (Redis Queue). It is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis — a key/value data store.
+
+"Flavio was here"
