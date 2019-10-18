@@ -9,7 +9,33 @@ With asynchronous programming, you allow your code to handle other tasks while w
 **1. Multiple Processes**
 
 The most obvious way is to use multiple processes. From the terminal, you can start your script two, three, four…ten times and then all the scripts are going to run independently or at the same time. The operating system that’s underneath will take care of sharing your CPU resources among all those instances. Alternately you can use the multiprocessing library which supports spawning processes.
+This is a code, create in python "Multiple processes"
+from multiprocessing import Process
 
+#a function to print with, the continent word or attribute is 
+#created to then change that attribute to some other desired
+def print_func(continent='Asia'):
+    print('The name of continent is : ', continent)
+#a condition is created to add names where the continent is sent to print
+if __name__ == "__main__":  # confirms that the code is under main function
+    names = ['America', 'Europe', 'Africa']
+    procs = []
+    proc = Process(target=print_func)  # instantiating without any argument
+    procs.append(proc)
+    proc.start()
+
+    # instantiating process with arguments
+    for name in names:
+        # print(name)
+        proc = Process(target=print_func, args=(name,))
+        procs.append(proc)
+        proc.start()
+
+    # complete the processes
+    for proc in procs:
+        proc.join()
+
+In this practice we can see how a multiprocess is clearly seen when carrying out an overload of data in the containing variable by adding the desired information.
 **2. Multiple Threads**
 
 The next way to run multiple things at once is to use threads. A thread is a line of execution, pretty much like a process, but you can have multiple threads in the context of one process and they all share access to common resources. 
@@ -37,3 +63,6 @@ A context switch in asyncio represents the event loop yielding the flow of contr
 Using asyncio and aiohttp may not always be in an option,  Also, there will be scenarios when you would want to distribute your tasks across different servers. In that case we can leverage RQ (Redis Queue). It is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis — a key/value data store.
 
 "Flavio was here"
+Setting up your Environment
+
+
