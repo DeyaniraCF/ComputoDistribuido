@@ -36,13 +36,63 @@ if __name__ == "__main__":  # confirms that the code is under main function
         proc.join()
 
 In this practice we can see how a multiprocess is clearly seen when carrying out an overload of data in the containing variable by adding the desired information.
+
+
 **2. Multiple Threads**
 
 The next way to run multiple things at once is to use threads. A thread is a line of execution, pretty much like a process, but you can have multiple threads in the context of one process and they all share access to common resources. 
+import threading
+
+def print_cube(num):
+    """
+    function to print cube of given num
+    """
+    print("Cube:{}".format(num * num * num))
+    
+    def print_square(num):
+        """
+        function to print square of given num
+        """
+        print("Square: {}".format(num * num)
+        
+        if_name_=="_main_":
+            #Creating thread
+            t1 = threading.Thread(target=print_square, args+(10,))
+            t2 = threading.Thread(target=print_cube, args+(10,))
+            
+            #Initial thread 1 and thread 2
+            t1.start()
+            t2.start()
+            
+            #the thread wait for complete
+            t1.join()
+            t2.join()
+            
+            #completely executed
+            print("Done!")
+
 
 **3. Coroutines using yield**
 
 Coroutines are generalization of subroutines. They are used for cooperative multitasking where a process voluntarily yield (give away) control periodically or when idle in order to enable multiple applications to be run simultaneously. Coroutines are similar to generators but with few extra methods and slight change in how we use yield statement. Generators produce data for iteration while coroutines can also consume data.
+
+def print_name(prefix):
+    print("Searching prefix:{}".format(prefix))
+    try :
+        while True:
+            #yeild used to create coroutine
+            name=(yield)
+            if prefix in name:
+                print(name)
+    except GeneratorExit:
+        print("CLosing coroutine!!")
+        
+corou = print_name("Dear")
+corou._next_()
+corou.send("James")
+corou.send("Dear James")
+corou.close()
+
 
 **4. Asynchronous Programming**
 
@@ -65,4 +115,38 @@ Using asyncio and aiohttp may not always be in an option,  Also, there will be s
 "Flavio was here"
 Setting up your Environment
 
+***LINK2***
+**Async IO in Python: A Complete Walkthrough**
 
+Async IO is a concurrent programming design that has received dedicated support in Python, evolving rapidly from Python 3.4 through 3.7, and probably beyond.
+
+**Where does Async IO fit in?**
+
+The concurrence and the parallelism are expansive subjects in which it is not easy to get into. The parallelism consists of performing multiple operations at the same time. Multiprocessing is a means to achieve parallelism and involves the distribution of tasks over the central processing units (CPUs or cores) of a computer. Multiprocessing is very suitable for tasks related to the CPU. Concurrency is a slightly broader term than parallelism. It suggests that multiple tasks have the ability to execute in an overlapping manner.
+Threading is a concurrent execution model in which several threads take turns executing tasks. A process can contain multiple threads.The important thing to know about threads is that it is better for tasks linked to IO.
+
+To be clear, async IO is not a newly invented concept, and it has existed or is being incorporated into other languages ​​and runtime environments ,, Python asynciodocumentation bills the package as a library to write concurrent code. However, asynchronous IO is not threading, nor is it multiprocessing. It is not built on any of these. In fact, async IO is a single process and single thread design: it uses cooperative multitasking.
+Python asynciodocumentation bills the package as a library to write concurrent code. However, asynchronous IO is not threading, nor is it multi-processing, async IO is a single-process and single-threaded design: it uses cooperative multitasking.
+To reiterate, asynchronous IO is a concurrent programming style, but it is not parallel.
+
+**The asyncio Package and async/await**
+
+The Python asyncio package and its two keywords, async and await, serve different purposes but come together to help you declare, build, execute, and manage asynchronous code ..
+In the heart of async IO there are corutinas: a corutina is a function that can suspend its execution before arriving return, and can indirectly pass the control to another corutina for some time.
+
+**The rules of Async IO**
+
+The async syntax defines a native corutin or an asynchronous generator.
+The await keyword returns the function control to the event loop.
+Using await and / or return creates a coroutine function. To call a coroutine function, you must await it to get its results.
+To use yielden an async defblock. This creates an asynchronous generator, with which you iterate async for ..
+Anything defined with async defno can be used yield from, which will raise SyntaxError.
+Just as it is a SyntaxErroruso yield out of a deffunction, it is a SyntaxErroruso await out of a defunct async. You can only use awaiten the body of corutins.
+
+
+**Async IO Design Patterns**
+
+Chaining Corutinas
+A key feature of corutins is that they can be chained together. (Remember, an object of corutina is waiting, so that another corutina can await it). This allows you to divide the programs into smaller, manageable and recyclable corutins.
+Using a tail
+The asynciopackage provides queue classes that are designed to be similar to the classes of the queuemodule. There is an alternative structure that can also work with asynchronous I / O: several producers, which are not associated with each other, add elements to a queue. Each producer can add several elements to the queue at staggered, random moments and without prior notice. A group of consumers pull items out of the queue as they appear, greedily and without waiting for any other signal.
