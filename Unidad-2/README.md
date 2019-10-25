@@ -156,11 +156,10 @@ The asynciopackage provides queue classes that are designed to be similar to the
 
 This isn’t very interesting on its surface. The result of calling a coroutine on its own is an awaitable coroutine object, Hopefully you are thinking of generators as an answer to this question, because corutins are improved generators under the hood.
 A critical feature of generators with regard to asynchronous IO is that they can be effectively stopped and restarted at will.
-
 The fundamental difference between functions and generators. A function is all or nothing. Once it starts, it won't stop until it reaches a return, then it pushes that value to the caller, a generator, on the other hand, stops every time it hits yieldy it doesn't go further. Not only can you push this value to the call stack, but you can also keep your local variables when you resume it by calling it next (). There is a second less known feature of generators that is also important. You can also send a value to a generator through its .send () method.
 
 Other Features: async for and Async Generators + Comprehensions
 Along with plain async / await, Python also allows async to foriterate over an asynchronous iterator. The purpose of an asynchronous iterator is that it can call asynchronous code at each stage when it is repeated. A natural extension of this concept is an asynchronous generator.
 Neither asynchronous generators nor understandings make the iteration concurrent. All they do is provide the appearance of their synchronous counterparts, but with the ability of the cycle in question to yield control of the event cycle so that some other routine is executed.
-
 In other words, asynchronous iterators and asynchronous generators are not designed to simultaneously assign some function over a sequence or iterator. They are simply designed to allow the closing routine to allow other tasks to take their turn.
+
