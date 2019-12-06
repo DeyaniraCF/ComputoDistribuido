@@ -115,7 +115,6 @@ Using asyncio and aiohttp may not always be in an option,  Also, there will be s
 "Flavio was here"
 Setting up your Environment
 
-****LINK2****
 
 **Async IO in Python: A Complete Walkthrough**
 
@@ -154,12 +153,87 @@ The asynciopackage provides queue classes that are designed to be similar to the
 
 **Async IO's Roots in Generators**
 
-This isn’t very interesting on its surface. The result of calling a coroutine on its own is an awaitable coroutine object, Hopefully you are thinking of generators as an answer to this question, because corutins are improved generators under the hood.
-A critical feature of generators with regard to asynchronous IO is that they can be effectively stopped and restarted at will.
-The fundamental difference between functions and generators. A function is all or nothing. Once it starts, it won't stop until it reaches a return, then it pushes that value to the caller, a generator, on the other hand, stops every time it hits yieldy it doesn't go further. Not only can you push this value to the call stack, but you can also keep your local variables when you resume it by calling it next (). There is a second less known feature of generators that is also important. You can also send a value to a generator through its .send () method.
+The result of calling a coroutine on its own is an awaitable coroutine object.
+what other feature of Python looks like this? coroutines are enhanced generators under the hood. The behavior is similar in this regard:Generator functions are, as it so happens, the foundation of async IO
+One critical feature of generators as it pertains to async IO is that they can effectively be stopped and restarted at will.
+Keep in mind that yield, and by extension yield from and await, mark a break point in a generator’s execution.
 
-Other Features: async for and Async Generators + Comprehensions
-Along with plain async / await, Python also allows async to foriterate over an asynchronous iterator. The purpose of an asynchronous iterator is that it can call asynchronous code at each stage when it is repeated. A natural extension of this concept is an asynchronous generator.
-Neither asynchronous generators nor understandings make the iteration concurrent. All they do is provide the appearance of their synchronous counterparts, but with the ability of the cycle in question to yield control of the event cycle so that some other routine is executed.
-In other words, asynchronous iterators and asynchronous generators are not designed to simultaneously assign some function over a sequence or iterator. They are simply designed to allow the closing routine to allow other tasks to take their turn.
+This is the fundamental difference between functions and generators. A function is all-or-nothing. Once it starts, it won’t stop until it hits a return, then pushes that value to the caller. A generator, on the other hand, pauses each time it hits a yield and goes no further. Not only can it push this value to calling stack, but it can keep a hold of its local variables when you resume it by calling next() on it.
+There’s a second and lesser-known feature of generators that also matters. You can send a value into a generator as well through its .send() method. This allows generators (and coroutines) to call (await) each other without blocking.
+here are some key points on the topic of coroutines as generators:
+Coroutines are repurposed generators that take advantage of the peculiarities of generator methods.
+Old generator-based coroutines use yield from to wait for a coroutine result. Modern Python syntax in native coroutines simply replaces yield from with await as the means of waiting on a coroutine result. The await is analogous to yield from, and it often helps to think of it as such.
+The use of await is a signal that marks a break point. It lets a coroutine temporarily suspend execution and permits the program to come back to it later.
+
+**Other Features: async for and Async Generators + Comprehensions**
+
+Python also enables async for to iterate over an asynchronous iterator. The purpose of an asynchronous iterator is for it to be able to call asynchronous code at each stage when it is iterated over.
+A natural extension of this concept is an asynchronous generator.Recall that you can use await, return, or yield in a native coroutine.
+Python enables asynchronous comprehension with async for. Like its synchronous cousin, this is largely syntactic sugar:
+This is a crucial distinction: neither asynchronous generators nor comprehensions make the iteration concurrent. All that they do is provide the look-and-feel of their synchronous counterparts, but with the ability for the loop in question to give up control to the event loop for some other coroutine to run.
+asynchronous iterators and asynchronous generators are not designed to concurrently map some function over a sequence or iterator. They’re merely designed to let the enclosing coroutine allow other tasks to take their turn. The async for and async with statements are only needed to the extent that using plain for or with would “break” the nature of await in the coroutine. This distinction between asynchronicity and concurrency is a key one to grasp.
+
+**The Event Loop and asyncio.run()**
+
+You can think of an event loop as something like a Truebucle while monitoring routines. It is capable of waking an inactive corutina when anything you are waiting for is available.
+asyncio.run (), is responsible for obtaining the event loop, executing tasks until they are marked as complete and then closing the event loop.
+If you need to interact with the loop event loop, it supports introspection with loop.is_running () and loop.is_closed (). You can manipulate it if you need more tight control, such as programming a callback by passing the loop as an argument.
+The most important thing is to understand a little below the surface about the mechanics of the event loop.
+#1: Routines do not do much by themselves until they are linked to the event loop.
+#2: By default, an asynchronous IO event loop is executed in a single thread and in a single CPU core. Generally, executing a single thread event loop in a CPU core is more than enough.
+#3 Event loops are connectable.
+
+**Procesamiento paralelo en Python: una guía práctica con ejemplos**
+
+Parallel processing is a mode of operation where the task runs simultaneously on multiple processors on the same computer. It is intended to reduce the total processing time.
+However, there is usually a bit of overhead when communicating between processes, which can actually increase the total time needed for small tasks instead of decreasing it.
+
+In python, the multiprocessing module is used to execute independent parallel processes by using threads (instead of threads), it means that processes can be run in completely separate memory locations.
+
+2. How many maximum parallel processes can you execute?
+The maximum number of processes you can run at once is limited by the number of processors on your computer. If you don't know how many processors are in the machine, the cpu_count () multiprocessing function will show it.
+
+3. What is synchronous and asynchronous execution?
+In parallel processing, there are two types of execution:
+Synchronous: it is one in which the processes are completed in the same order in which it started. This is achieved by blocking the main program until the respective processes are finished.
+Asynchronous: on the other hand, it does not imply blocking. As a result, the order of the results can be confused, but generally it becomes faster.
+There are 2 main multiprocessing objects to implement the parallel execution of a function: the Poolclass and the Processclass.
+
+
+4. Problem statement: Count how many numbers exist between a given range in each row
+Solution without parallelization
+
+
+5. How to parallelize any function?
+The general way to parallelize any operation is to take a particular function that must be executed several times and have it run in parallel on different processors. To do this, initialize Poolcon n number of processors and pass the function you want to parallelize to one of Pool paralysis methods.
+multiprocessing.Pool () provides the apply (), map () and starmap () methods to make any function run in parallel.
+To do this, initialize to Poolcon n number of processors and pass the function that you want to parallelize to one of Pool's paralyzing methods.
+multiprocessing.Pool () provides the apply (), map () and starmap () methods to make any function run in parallel.Therefore it is better map ()
+
+5.1. Parallelization using Pool.apply ()
+Let's parallel the function using .howmany_within_range () multiprocessing.Pool ()
+5.2. Parallelization using Pool.map ()
+Pool.map () accepts only one iterable argument.
+5.3. Parallelization using Pool.starmap ()
+starmap ()
+Like, it also accepts only one iterable as an argument, but in, each element in that iterable is also iterable. You can provide the arguments to the 'function to be parallelized' in the same order in this internal iterable element, in turn it will be unpacked during execution.Pool.map () Pool.starmap () starmap ()
+ 
+6. Asynchronous parallel processing
+Asynchronous equivalents, and allow you to execute processes in parallel asynchronously, that is, the next process can begin as soon as the previous one is completed without taking into account the starting order.
+As a result, there is no guarantee that the result will be in the same order as the entry.apply_async () map_async () starmap_async ()
+6.1 Parallelization with Pool.apply_async ()
+apply_async () is very similar to except that you need to provide a callback function that tells you how the calculated results should be stored.
+It is possible to use without providing a function. Only that, if you do not provide a callback, you will get a list of objects that contains the calculated output values ​​of each process.
+ 
+6.2 Parallelization with Pool.starmap_async ()
+CODE
+ 
+7. How to parallel a panda data frame?
+Pandas, which are the most used objects (in addition to numpy matrices) to store tabular data. When it comes to parallelizing DataFrame, you can make the function parallel to take as input parameter:
+a row of the data frame
+a column of the data frame
+the whole data frame itself
+The first 2 can be done using the multiprocessing module itself. But for the latter, which is the parallelization in a complete data frame, we will use the pathospackage that is used dill for serialization internally.
+CODE
+
 
