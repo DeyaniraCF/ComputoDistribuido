@@ -1,10 +1,10 @@
-**Table of contents**
+**Table of contens**
 
-[1-An Introduction to Asynchronus Programing in Python](#an-introduction-to-asinchronus-programming-in-python)
-[3.-Coroutines using yield](#coroutines-using-yield)
+[An Introduction to Asynchronus Programing in Python](#an-introduction-to-asinchronus-programming-in-python)
+[3. Coroutines using yield](#coroutines-using-yield)
 
-
-**An Introduction to Asynchronous Programming in Python**
+###Lesson1
+## An Introduction to Asynchronous Programming in Python ##
 
 Asynchronous programming is a type of parallel programming in which a unit of work is allowed to run separately from the primary application thread.
 When the work is complete, it notifies the main thread about completion or failure of the worker thread. There are numerous benefits to using it, such as improved application performance and enhanced responsiveness.
