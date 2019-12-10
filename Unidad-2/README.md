@@ -1,7 +1,10 @@
 **Table of contens**
 
 [An Introduction to Asynchronus Programming in Python](#an-introduction-to-asinchronus-programming-in-python)
+
 [3. Coroutines using yield](#coroutines-using-yield)
+
+[Async IO in Python A Complete Walkthrough](#async-io-in-python a-complete-walkthrough)
 
 # **An Introduction to Asynchronous Programming in Python**
 
@@ -121,7 +124,7 @@ Using asyncio and aiohttp may not always be in an option,  Also, there will be s
 Setting up your Environment
 
 
-**Async IO in Python: A Complete Walkthrough**
+**Async IO in Python A Complete Walkthrough**
 
 Async IO is a concurrent programming design that has received dedicated support in Python, evolving rapidly from Python 3.4 through 3.7, and probably beyond.
 
