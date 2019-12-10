@@ -3,7 +3,6 @@
 [An Introduction to Asynchronus Programing in Python](#an-introduction-to-asinchronus-programming-in-python)
 [3. Coroutines using yield](#coroutines-using-yield)
 
-###Lesson1
 ## An Introduction to Asynchronous Programming in Python ##
 
 Asynchronous programming is a type of parallel programming in which a unit of work is allowed to run separately from the primary application thread.
@@ -78,7 +77,7 @@ def print_cube(num):
             print("Done!")
 
 
-**3. Coroutines using yield**
+ **3. Coroutines using yield**
 
 Coroutines are generalization of subroutines. They are used for cooperative multitasking where a process voluntarily yield (give away) control periodically or when idle in order to enable multiple applications to be run simultaneously. Coroutines are similar to generators but with few extra methods and slight change in how we use yield statement. Generators produce data for iteration while coroutines can also consume data.
 
