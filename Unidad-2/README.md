@@ -21,9 +21,13 @@
 [The rules of Async IO](#the-rules-of-async-io)
 
 [Async IO Design Patterns](#async-io-design-patterns)
+
 [Async IO's Roots in Generators](#async-io-roots-in-generators)
+
 [Other Features: async for and Async Generators + Comprehensions](#other-features-async-for-async-and-async-generators-comprehensions)
+
 [The Event Loop and asyncio.run()](#the-event-loop-and-asyncio-run)
+
 [Parallel processing in Python: a practical guide with examples](#parallel-processing-in-python-a-practical-guide-with-examples)
 
 # **An Introduction to Asynchronous Programming in Python**
