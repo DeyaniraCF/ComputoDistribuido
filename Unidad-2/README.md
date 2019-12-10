@@ -1,18 +1,32 @@
 **Table of contens**
 [An Introduction to Asynchronus Programming in Python](#an-introduction-to-asinchronus-programming-in-python)
+
 [1. Multiple Processes](#multiple-processes)
+
 [2. Multiple Threads](#multiple-trheads)
+
 [3. Coroutines using yield](#coroutines-using-yield)
+
 [Asynchronous Programming](#asynchronus-programming)
+
 [Using Redis and Redis Queue RQ](#using-redis-and-queue)
+
 [Async IO in Python A Complete Walkthrough](#async-io-in-python)
+
 [Where does Async IO fit in?](#where-does-async-io)
+
 [The asyncio Package and async/await](#the asyncio-package-and-async)
+
 [The rules of Async IO](#the-rules-of-async-io)
+
 [Async IO Design Patterns](#async-io-design-patterns)
+
 [Async IO's Roots in Generators](#async-io-roots-in-generators)
+
 [Other Features: async for and Async Generators + Comprehensions](#other-features-async-for-async)
+
 [The Event Loop and asyncio.run()](#the-event-loop-and-asyncio)
+
 [Parallel processing in Python: a practical guide with examples](#parallel-processing-in-python)
 
 # **An Introduction to Asynchronous Programming in Python**
