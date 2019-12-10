@@ -38,7 +38,7 @@ When the work is complete, it notifies the main thread about completion or failu
 With asynchronous programming, you allow your code to handle other tasks while waiting for these other resources to respond.
 
 
-**1. Multiple Processes**
+# **1. Multiple Processes**
 
 The most obvious way is to use multiple processes. From the terminal, you can start your script two, three, four…ten times and then all the scripts are going to run independently or at the same time. The operating system that’s underneath will take care of sharing your CPU resources among all those instances. Alternately you can use the multiprocessing library which supports spawning processes.
 This is a code, create in python "Multiple processes"
@@ -70,7 +70,7 @@ if __name__ == "__main__":  # confirms that the code is under main function
 In this practice we can see how a multiprocess is clearly seen when carrying out an overload of data in the containing variable by adding the desired information.
 
 
-**2. Multiple Threads**
+# **2. Multiple Threads**
 
 The next way to run multiple things at once is to use threads. A thread is a line of execution, pretty much like a process, but you can have multiple threads in the context of one process and they all share access to common resources. 
 import threading
@@ -104,7 +104,7 @@ def print_cube(num):
             print("Done!")
 
 
- **3. Coroutines using yield**
+ # **3. Coroutines using yield**
 
 Coroutines are generalization of subroutines. They are used for cooperative multitasking where a process voluntarily yield (give away) control periodically or when idle in order to enable multiple applications to be run simultaneously. Coroutines are similar to generators but with few extra methods and slight change in how we use yield statement. Generators produce data for iteration while coroutines can also consume data.
 
@@ -126,7 +126,7 @@ corou.send("Dear James")
 corou.close()
 
 
-**4. Asynchronous Programming**
+# **4. Asynchronous Programming**
 
 The fourth way is an asynchronous programming, where the OS is not participating. As far as OS is concerned you’re going to have one process and there’s going to be a single thread within that process, but you’ll be able to do multiple things at once.
 The answer is asyncio is the new concurrency module introduced in Python 3.4. It is designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code as there are no callbacks.
@@ -140,7 +140,7 @@ Using Asyncio, you can structure your code so subtasks are defined as coroutines
 
 A context switch in asyncio represents the event loop yielding the flow of control from one coroutine to the next.
 
-**Using Redis and Redis Queue RQ**
+# **Using Redis and Redis Queue RQ**
 
 Using asyncio and aiohttp may not always be in an option,  Also, there will be scenarios when you would want to distribute your tasks across different servers. In that case we can leverage RQ (Redis Queue). It is a simple Python library for queueing jobs and processing them in the background with workers. It is backed by Redis — a key/value data store.
 
@@ -152,7 +152,7 @@ Setting up your Environment
 
 Async IO is a concurrent programming design that has received dedicated support in Python, evolving rapidly from Python 3.4 through 3.7, and probably beyond.
 
-**Where does Async IO fit in?**
+# **Where does Async IO fit in?**
 
 The concurrence and the parallelism are expansive subjects in which it is not easy to get into. The parallelism consists of performing multiple operations at the same time. Multiprocessing is a means to achieve parallelism and involves the distribution of tasks over the central processing units (CPUs or cores) of a computer. Multiprocessing is very suitable for tasks related to the CPU. Concurrency is a slightly broader term than parallelism. It suggests that multiple tasks have the ability to execute in an overlapping manner.
 Threading is a concurrent execution model in which several threads take turns executing tasks. A process can contain multiple threads.The important thing to know about threads is that it is better for tasks linked to IO.
@@ -161,7 +161,7 @@ To be clear, async IO is not a newly invented concept, and it has existed or is 
 Python asynciodocumentation bills the package as a library to write concurrent code. However, asynchronous IO is not threading, nor is it multi-processing, async IO is a single-process and single-threaded design: it uses cooperative multitasking.
 To reiterate, asynchronous IO is a concurrent programming style, but it is not parallel.
 
-**The asyncio Package and async/await**
+# **The asyncio Package and async/await**
 
 The Python asyncio package and its two keywords, async and await, serve different purposes but come together to help you declare, build, execute, and manage asynchronous code ..
 In the heart of async IO there are corutinas: a corutina is a function that can suspend its execution before arriving return, and can indirectly pass the control to another corutina for some time.
